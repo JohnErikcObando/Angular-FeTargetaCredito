@@ -1,0 +1,38 @@
+
+            <h5 class="titulo">Listar Targeta</h5>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col"> # Targeta</th>
+                    <th scope="col">Fecha vencimiento</th>
+                    
+                </tr>
+                </thead>
+                <tbody >
+                <tr *ngFor="let listTargeta of listTargetas, let i=index">
+                    <th scope="row">{{i}}</th>
+                    <td>{{listTargeta.titular}}</td>
+                    <td>{{listTargeta.numTargeta}}</td>
+                    <td>{{listTargeta.fechaVen}}</td>
+                    <td>{{listTargeta.cvv}}</td>
+                    <td>
+                        <i class="fas fa-edit text-info"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-trash-alt text-danger"></i>
+                    </td>
+                </tr>
+               
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+

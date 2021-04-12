@@ -1,0 +1,47 @@
+<h5 class="titulo">Agregar Targeta</h5>
+
+<form [formGroup]="form" (ngSubmit)="agregartargeta()">
+    <div class="input-group input-group-lg mb-3 ">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+        </div>
+        <input formGroupName="titular" type="text" class="form-control" placeholder="Username" >
+    </div>
+
+    <div class="input-group input-group-lg mb-3 ">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="far fa-credit-card"></i></span>
+        </div>
+        <input formGroupName="numTargeta" type="text" class="form-control" placeholder="Numero Targeta" >
+    </div>
+
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="input-group input-group-lg mb-3 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                </div>
+                <input formGroupName="fechaVen" type="text" class="form-control" placeholder="MM/YY" >
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="input-group input-group-lg mb-3 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                </div>
+                <input formGroupName="cvv" type="password" class="form-control" placeholder="CVV" >
+            </div>
+        </div>
+    </div>
+
+    <div class="d-grid gap-2">
+
+        <button type="submit" class="btn btn-success btn-lg btn-block">
+            <i class="fas fa-database"></i> &nbsp;
+            Aceptar
+        </button>
+
+    </div>
+
+</form>
